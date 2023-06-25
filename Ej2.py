@@ -61,18 +61,23 @@ cola = ColaAtencion()
 
 print("¿La cola está vacía?", cola.esta_vacia())
 
+# Registrar clientes
 cliente1 = Cliente(1, 'Caja 1')
 cliente2 = Cliente(2, 'Caja 2')
 cliente3 = Cliente(3, 'Caja 3')
 cliente4 = Cliente(4, 'Caja 1')
 
+# Agregar clientes a la cola (lista)
 cola.agregar_al_final(cliente1)
 cola.agregar_al_final(cliente2)
 cola.agregar_al_final(cliente3)
 cola.agregar_al_final(cliente4)
 
+# Mostrar estado actual de la cola (lista)
 print('Cola:\n', cola.imprimir())
 
+# Atender cliente, básicamente, eliminar
 print('Cliente atendido:', cola.atender_siguiente().ticket)
 
+# Estado actual cola (lista)
 print('\nCola actualizada:\n', cola.imprimir())
