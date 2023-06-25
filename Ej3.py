@@ -58,8 +58,7 @@ class ListaEnlazada:
     # D.
     def imprimir_lista(self):
         if self.esta_vacia():
-            print('La lista está vacía.')
-            return
+            return print('La lista está vacía.')
 
         actual = self.primero
         while actual:
@@ -101,7 +100,8 @@ lista.agregar_dato(91)
 lista.agregar_dato(74)
 
 # Estado actual de la lista.
-print('Lista:\n', lista.imprimir_lista())
+print('Lista:')
+lista.imprimir_lista()
 
 # B. Calcular media de la lista.
 print('Media:', lista.calcular_media())
@@ -113,7 +113,8 @@ print('Desviación estándar:', lista.calcular_desviacion_estandar())
 lista.eliminar(65)
 
 # D. Mostrar lista actual.
-print('Lista actualizada:\n', lista.imprimir_lista())
+print('Lista actualizada:')
+lista.imprimir_lista()
 
 # E. Verificar si está vacía.
 print('¿La lista está vacía?', lista.esta_vacia())
